@@ -40,6 +40,13 @@ font-weight: 700;
 font-family: 'Titillium Web', sans-serif;
 }
 
+.otsikko3 {
+font-size: 40px;
+color: #222222;
+font-weight: 700;
+font-family: 'Titillium Web', sans-serif;
+}
+
 a {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
