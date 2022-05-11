@@ -11,15 +11,25 @@ body {
 h1 {
 color: white;
 size: 40px;
-
+padding-left: 50px;
+padding-top: 50px;
 }
 
 h2 {
 color: white;
 size: 20px;
+padding-left: 50px;
 }
 
 h3 {
 color: white;
 size: 40px;
+padding-left: 50px;
+}
+
+p {
+padding-left: 50px;
+
+
+
 }
