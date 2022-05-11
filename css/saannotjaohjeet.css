@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-image: url(/kuvat/gamer-background.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
 
 h1 {
