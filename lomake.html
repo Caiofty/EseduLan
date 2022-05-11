@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EseduLan</title>
+    <link rel="stylesheet" href="/css/lomake.css">
 </head>
 <body>
     <style>
@@ -22,6 +23,8 @@
           background-image: url(/kuvat/gamer-background.jpg);
           background-size: cover;
         }
+
+
 
 
        .submit{
@@ -270,12 +273,19 @@
      <br><label style="color: #8dc63f" >Platform</label><br>  
      
      
-     <input  type="radio" id="gender" name="gender" value="male" /> PC  <br>  
-     <input type="radio" id="gender" name="gender" value="female"/>Konsoli <br/>    
+     <div class="radiolomake">
+       <input  type="radio" id="Platform" name="PC" value="PC" /> 
+       <label> PC </label>
+      </div>
+
+     <div class="radiolomake">
+       <input type="radio" id="Platform" name="Konsoli" value="Konsoli"/>
+       <label>  Konsoli </label>
+     </div>
     
        
      
-     <input class="submit" type="submit" value="SUBMIT">  
+  <input class="submit" type="submit" value="SUBMIT">  
  </fieldset>  
 </form>  
 
