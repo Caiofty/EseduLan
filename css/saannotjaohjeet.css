@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/kuvat/gamer-background.jpg);
+    background-size: cover;
+  }
+
+h1 {
+color: white;
+size: 40px;
+
+}
+
+h2 {
+color: white;
+size: 20px;
+}
+
+h3 {
+color: white;
+size: 40px;
+}
