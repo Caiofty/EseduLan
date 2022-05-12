@@ -4,10 +4,20 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(/kuvat/gamer-background2.jpg);
-    text-align: center;
+    /* text-align: center; */
     background-attachment: fixed;
     background-size: 100%
 }
+
+
+
+.etusivu{
+
+    text-align: center;
+}
+
+
+
 
 .isologo {
     padding-top: 80px;
@@ -861,6 +871,16 @@ h3.ohjeetotsikko3 {
     background-color: #000;
     height: 2px
 }
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width:650px) {
     .container {

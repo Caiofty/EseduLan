@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,72 +8,68 @@
     <title>EseduLan</title>
     <link rel="stylesheet" href="/css/uusi.css">
 </head>
+
 <body>
-    
 
 
 
-    
-        
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="/kuvat/esedu_logo2.svg" height="70px" alt="logo"></a>
-            </div>
+
+
+
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="/kuvat/esedu_logo2.svg" height="70px" alt="logo"></a>
+        </div>
         <div class="navbar">
-        
-        <div class="icon-bar" onclick="Show()">
-            <i></i>
-            <i></i>
-            <i></i>
+
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a href="/info.html">INFO</a></li>
+                <li><a href="/saannotjaohjeet.html">SÄÄNNÖT JA OHJEET</a></li>
+                <li><a href="/lomake.html">ILMOITTAUTUMISLOMAKE</a></li>
+            </ul>
+
         </div>
-        
-        <ul id="nav-lists">
-            <li class="close"><span onclick="Hide()">×</span></li>
-            <li><a href="/info.html">INFO</a></li>
-            <li><a href="/saannotjaohjeet.html">SÄÄNNÖT JA OHJEET</a></li>
-            <li><a href="/lomake.html">ILMOITTAUTUMISLOMAKE</a></li>
-        </ul>
-        
-        </div>
-        </div>
-        <div class="body">
-      
-        </div>
+    </div>
+   
+<div class="etusivu">
+
+    <div class="isologo"> <img class="isologo2" src="/kuvat/esedulan_isologo.png" alt="" width="200px"> </div>
 
 
 
-         <div class="isologo">   <img class="isologo2" src="/kuvat/esedulan_isologo.png" alt="" width="200px"> </div> 
-
-
-
-         <p class="huhtikuu"> Huhtikuun lanit 22.4.2022 - 24.4.20222  </p>
-
-
-              
-       
-             <img src="/kuvat/esedulan.jpg" alt="Nature" class="responsive" width="1000px">
+    <p class="huhtikuu"> Huhtikuun lanit 22.4.2022 - 24.4.20222 </p>
 
 
 
 
+    <img src="/kuvat/esedulan.jpg" alt="Nature" class="responsive" width="1000px">
 
 
-             <img src="/kuvat/P1001003.jpg" alt="Nature" class="responsive" width="1000px">
 
-             <img src="/kuvat/P1001000.jpg" alt="Nature" class="responsive" width="1000px">
-            
 
-        
-        <script>
+    <img src="/kuvat/P1001003.jpg" alt="Nature" class="responsive" width="1000px">
+
+    <img src="/kuvat/P1001000.jpg" alt="Nature" class="responsive" width="1000px">
+
+</div>
+
+    <script>
         var navList = document.getElementById("nav-lists");
         function Show() {
-        navList.classList.add("_Menus-show");
+            navList.classList.add("_Menus-show");
         }
-        
-        function Hide(){
-        navList.classList.remove("_Menus-show");
+
+        function Hide() {
+            navList.classList.remove("_Menus-show");
         }
-        </script>
+    </script>
 
 
 
@@ -80,4 +77,5 @@
 
 
 </body>
+
 </html>
