@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EseduLan</title>
+  <link rel="stylesheet" href="/css/lomake.css">
+  <link rel="stylesheet" href="/css/nav.css">
+</head>
+
+<body>
+
+
+
+
+
+
+  <div class="container">
+
+  
+
+
+    <div class="logo">
+      <a href="/index.html"><img src="/kuvat/esedu_logo2.svg" height="70px" alt="logo"></a>
+    </div>
+    <div class="navbar">
+
+      <div class="icon-bar" onclick="Show()">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+
+      <ul id="nav-lists">
+        <li class="close"><span onclick="Hide()">×</span></li>
+        <li><a href="/info.html">INFO</a></li>
+        <li><a href="/saannotjaohjeet.html">SÄÄNNÖT JA OHJEET</a></li>
+        <li><a href="/lomake.html">ILMOITTAUTUMISLOMAKE</a></li>
+      </ul>
+
+    </div>
+  </div>
+  
+  
+
+
+
+  <div class="tausta"></div>
+
+
+
+
+
+  <h1 style="color: #8dc63f">Ilmoittautumislomake</h1>
+  
+  
+  
+  
+   <form>
+    <fieldset>
+
+      <label class="l1" style="color: white">Nimi</label><br>
+      <input class="i1" type="text" name="name"><br>
+      <label class="l1"  style="color: white">Sähköposti</label><br>
+      <input class="i1"  type="email" name="email"><br>
+      <label class="l1"  style="color: white">Puhelinnumero</label><br>
+      <input class="i1"  type="phonenumber" name="Puhelinnumero"><br>
+      <label class="l1"  style="color: white">Discord Käyttäjänimi</label><br>
+      <input class="i1"  type="discord" name="Discord"><br>
+      <label class="l1"  style="color: white">Ikä</label><br>
+      <input class="i1"  type="age" name="Ikä"><br>
+      <br><label style="color: white">Platform</label><br>
+
+
+      <div class="radiolomake">
+        
+        <input type="radio" id="Platform" name="Platform" value="PC" />
+        <label> PC </label>
+       </div> 
+
+       <div class="radiolomake"> 
+        <input type="radio" id="Platform" name="Platform" value="Konsoli" />
+        <label> Konsoli </label>
+      </div>
+
+
+
+      <input class="submit" type="submit" value="SUBMIT">
+    </fieldset>
+  </form>
+
+
+
+
+
+
+
+
+  <script>
+    var navList = document.getElementById("nav-lists");
+    function Show() {
+      navList.classList.add("_Menus-show");
+    }
+
+    function Hide() {
+      navList.classList.remove("_Menus-show");
+    }
+  </script>
+
+
+</body>
+
+</html>

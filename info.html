@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EseduLan</title>
+    <link rel="stylesheet" href="./css/info.css">
+  
+</head>
+<body>
+    
+   
+        
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html"><img src="/kuvat/esedu_logo2.svg" height="70px" alt="logo"></a>
+            </div>
+        <div class="navbar">
+        
+        <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        
+        <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="/info.html">INFO</a></li>
+            <li><a href="/saannotjaohjeet.html">SÄÄNNÖT JA OHJEET</a></li>
+            <li><a href="/lomake.html">ILMOITTAUTUMISLOMAKE</a></li>
+        </ul>
+        
+        </div>
+        </div>
+        <div class="body">
+        </div>
+
+        <div class="etusivu">
+            
+             </div>
+
+        
+        <script>
+        var navList = document.getElementById("nav-lists");
+        function Show() {
+        navList.classList.add("_Menus-show");
+        }
+        
+        function Hide(){
+        navList.classList.remove("_Menus-show");
+        }
+        </script>
+
+<h1>Info</h1>
+    <p style = "color: white">
+    Paikka: Esedun ruokala Otavankatu 4, Mikkeli. <br>
+    Aika: 22.4. klo 18.00 – 24.4. klo 12.00. <br>
+    Osallistumismaksu: 10€. <br>
+    Ikäraja: 15v. <br>
+    Konepaikka: 120x75cm. <br>
+    50 konepaikkaa. <br>
+    Osallistua voi myös konsolilla. <br>
+    Päihteetön tapahtuma. <br>
+
+    </p>
+
+
+
+
+
+    <a href="https://discord.gg/BMVzfdwfu5"  >    <button class="discord">Discord</button>     </a>
+
+
+
+
+
+
+
+</body>
+</html>
