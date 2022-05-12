@@ -225,24 +225,18 @@ body {
     }
 }
 
-h1 {
+.h1-info {
     color: #8dc63f;
-    size: 40px;
+    font-size: 70px;
     padding-left: 50px;
-    padding-top: 50px
+    padding-top: 50px;
+    padding-right: 50px;
+    text-shadow: 2px 2px 2px #fff
 }
 
-h2 {
+.p-infotext {
     color: #fff;
-    size: 20px
-}
-
-h3 {
-    color: #fff;
-    size: 40px
-}
-
-p {
+    size: 20px;
     padding-left: 50px;
     font-size: 20px
 }
@@ -701,7 +695,7 @@ body {
 
 h1.ohjeetotsikko {
     color: #8dc63f;
-    font-size: 70px;
+    font-size: 50px;
     padding-left: 50px;
     padding-top: 50px;
     padding-right: 50px;
@@ -712,6 +706,15 @@ h2.ohjeetotsikko2 {
     color: #8dc63f;
     padding-left: 50px;
     padding-right: 50px
+}
+
+.ohjeetotsikko2-2 {
+    font-size: 50px;
+    color: #8dc63f;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-shadow: 2px 2px 2px #fff;  
+    margin: 0px;
 }
 
 h3.ohjeetotsikko3 {
@@ -745,6 +748,10 @@ h3.ohjeetotsikko3 {
     color: #fff;
     font-size: 20px;
     text-align: left
+}
+
+.main-ohjeet {
+max-width: 80%
 }
 
 @media only screen and (max-width:650px) {
