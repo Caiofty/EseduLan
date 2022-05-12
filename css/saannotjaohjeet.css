@@ -5,8 +5,13 @@ body {
     background-image: url(/kuvat/gamer-background.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; 
   }
+
+
+
+
+
 
 h1 {
 color: white;
