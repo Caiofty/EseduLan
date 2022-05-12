@@ -47,6 +47,21 @@ font-size: 20px;
 text-align:left;
 }
 
+.ul-li-b {
+  list-style-type: square;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align:left;
+
+
+
+}
+
+
+
+
 @media only screen and (max-width: 650px) {
   
 p{
