@@ -17,6 +17,7 @@
 
     p {
     padding-left: 50px;
+    font-size: 20px;
     
     }
 
@@ -213,6 +214,39 @@
           .container .navbar ._Menus-show {
             left: 0;
           }
+
+
+
+          /* h1 {
+            color: white;
+            size: 25px;
+            padding-left: 25px;
+            padding-top: 25px;
+            }
+            
+            h2 {
+            color: white;
+            size: 15px;
+            }
+            
+            h3 {
+            color: white;
+            size: 25px;
+            }
+        
+            p {
+            padding-left: 25px;
+            
+            }
+
+           .discord{
+             margin-left: 25px;
+                } */
+
+
+
+
+
         } 
 
 
