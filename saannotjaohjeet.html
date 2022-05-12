@@ -1,425 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EseduLan</title>
-    <link rel="stylesheet" href="./css/saannotjaohjeet.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EseduLan</title>
+  <link rel="stylesheet" href="./css/saannotjaohjeet.css">
 </head>
 <body>
-  <div class="bg">
-      <style>
-        *,
-        *::before,
-        *::after {
-          box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-        }
+  <div class="container">
+    <div class="logo">
+      <a href="/index.html"><img src="/kuvat/esedu_logo2.svg" height="70px" alt="logo"></a>
+    </div>
+    <div class="navbar">
 
-        .container {
-          height: 60px;
-          background-color: white;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          overflow: hidden;
-        }
-        
-        .container .logo {
-          max-width: 250px;
-          padding: 0 10px;
-          overflow: hidden;
-        }
-        
-        .container .logo a {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          height: 60px;
-        }
-        
-        .container .logo a img {
-          max-width: 100%;
-          max-height: 60px;
-        }
-        
-        .container .navbar {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          -webkit-box-flex: 1;
-          -ms-flex: 1;
-          flex: 1;
-          padding: 0 10px;
-        }
-        
-        .container .navbar ul {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-        
-        .container .navbar ul li a {
-          text-decoration: none;
-          color: #999999;
-          font-size: 14px;
-          text-transform: uppercase;
-          display: block;
-          height: 60px;
-          line-height: 60px;
-          cursor: pointer;
-          padding: 0 10px;
-        }
-        
-        .container .navbar ul li a:hover {
-          color: #ffffff;
-          background-color: rgba(23, 23, 23, 0.9);
-        }
-        
-        .container .navbar ul .close {
-          display: none;
-          text-align: right;
-          padding: 10px;
-        }
-        
-        .container .navbar ul .close span {
-          font-size: 40px;
-          display: inline-block;
-          border: 1px solid #cccccc;
-          padding: 0 10px;
-          cursor: pointer;
-        }
-        
-        .container .navbar .icon-bar {
-          
-          padding: 18px 8px;
-          width: 50px;
-          height: 60px;
-          display: none;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-          justify-content: space-between;
-          cursor: pointer;
-        }
-        
-        .container .navbar .icon-bar i {
-          background-color: black;
-          height: 2px;
-        }
-        
-        @media only screen and (max-width: 650px) {
-          .container {
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-          }
-        
-          .container .logo {
-            -webkit-box-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
-          }
-        
-          .container .navbar {
-            -webkit-box-flex: 0;
-            -ms-flex: 0;
-            flex: 0;
-          }
-        
-          .container .navbar ul {
-            -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-            position: fixed;
-            left: 100%;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            background: #ffffff;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            -webkit-transition: left .3s;
-            -o-transition: left .3s;
-            transition: left .3s;
-          }
-        
-          .container .navbar ul li a {
-            padding: 10px;
-            font-size: 16px;
-            height: auto;
-            line-height: normal;
-            color: #555555;
-          }
-        
-          .container .navbar ul .close {
-            display: block;
-          }
-        
-          .container .navbar .icon-bar {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-          }
-        
-          .container .navbar ._Menus-show {
-            left: 0;
-          }
-        }
-        </style>
-      </head>
-        <body>
-        
-        <div class="container">
-            <div class="logo">
-                <a href="/index.html"><img src="/kuvat/esedu_logo2.svg" height="70px" alt="logo"></a>
-            </div>
-        <div class="navbar">
-        
-        <div class="icon-bar" onclick="Show()">
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
-        
-        <ul id="nav-lists">
-            <li class="close"><span onclick="Hide()">×</span></li>
-            <li><a href="/info.html">INFO</a></li>
-            <li><a href="/saannotjaohjeet.html">SÄÄNNÖT JA OHJEET</a></li>
-            <li><a href="/lomake.html">ILMOITTAUTUMISLOMAKE</a></li>
-        </ul> 
-        </div>
-        </div>
-        <div class="body">
-        </div>
+      <div class="icon-bar" onclick="Show()">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
 
-        <div class="etusivu">
-             </div>
+      <ul id="nav-lists">
+        <li class="close"><span onclick="Hide()">×</span></li>
+        <li><a href="/info.html">INFO</a></li>
+        <li><a href="/saannotjaohjeet.html">SÄÄNNÖT JA OHJEET</a></li>
+        <li><a href="/lomake.html">ILMOITTAUTUMISLOMAKE</a></li>
+      </ul>
+    </div>
+  </div>
 
-        
-        <script>
-        var navList = document.getElementById("nav-lists");
-        function Show() {
-        navList.classList.add("_Menus-show");
-        }
-        
-        function Hide(){
-        navList.classList.remove("_Menus-show");
-        }
-        </script>
+  <script>
+    var navList = document.getElementById("nav-lists");
+    function Show() {
+      navList.classList.add("_Menus-show");
+    }
+
+    function Hide() {
+      navList.classList.remove("_Menus-show");
+    }
+  </script>
 
   <h1>LANIOPAS</h1>
-  <p style ="color: #8dc63f">Valmistele vierailusi huolella:  <br>
+  <p style="color: #8dc63f">Valmistele vierailusi huolella: <br>
 
-Ota kaikki tarpeellinen mukaasi ja huolehdi, että tietokoneesi on valmiina tapahtumaan. <br>
+    Ota kaikki tarpeellinen mukaasi ja huolehdi, että tietokoneesi on valmiina tapahtumaan. <br>
 
-<h2>PAKKAUSLISTA</h2>
-<p style ="color: #8dc63f">
+  <h2>PAKKAUSLISTA</h2>
+  <p style="color: #8dc63f">
 
-Jokaisella on erilaiset tarpeet, mutta ohessa on peruslista tapahtumassa yöpyvien tarvitsemista asioista. <br>
+    Jokaisella on erilaiset tarpeet, mutta ohessa on peruslista tapahtumassa yöpyvien tarvitsemista asioista. <br>
 
-Vaatetus: mukavat vaatteet koneella istumiseen, lämpimiä vaatteita yöksi. <br>
+    Vaatetus: mukavat vaatteet koneella istumiseen, lämpimiä vaatteita yöksi. <br>
 
-Nukkuminen: makuupussi, makuualusta, tyyny ja mahdollinen unilelu. <br>
+    Nukkuminen: makuupussi, makuualusta, tyyny ja mahdollinen unilelu. <br>
 
-Lääkkeet: särkylääkettä, muut päivittäin tarvitsemasi lääkkeet (resepti oltava mukana). <br>
+    Lääkkeet: särkylääkettä, muut päivittäin tarvitsemasi lääkkeet (resepti oltava mukana). <br>
 
-Korvatulpat. <br>
+    Korvatulpat. <br>
 
-Juomapullo. <br>
+    Juomapullo. <br>
 
-Kaikki tietokoneesi/pelikonsolisi johdot, tykötarpeet ja kaksivaiheisten varmistusten vaatimat laitteet. <br>
+    Kaikki tietokoneesi/pelikonsolisi johdot, tykötarpeet ja kaksivaiheisten varmistusten vaatimat laitteet. <br>
 
-Muutakin voi tuoda, jos kokee tarvitsevansa. Muista kuitenkin, että esim. erittäin tehokkaat äänentoistolaitteet ja kaikenlaiset teräaseet ovat kiellettyjä. Kiellettyjen tavaroiden lista löytyy kokonaisuudessaan säännöistä. Tavaroidesi pitää mahtua konepaikallesi. <br>
+    Muutakin voi tuoda, jos kokee tarvitsevansa. Muista kuitenkin, että esim. erittäin tehokkaat äänentoistolaitteet ja
+    kaikenlaiset teräaseet ovat kiellettyjä. Kiellettyjen tavaroiden lista löytyy kokonaisuudessaan säännöistä.
+    Tavaroidesi pitää mahtua konepaikallesi. <br>
 
-<h2>LAITTEISTO JA MUUT TARPEELLISET</h2>
-<p style="color: #8dc63f">
+  <h2>LAITTEISTO JA MUUT TARPEELLISET</h2>
+  <p style="color: #8dc63f">
 
-Sinun on itse tuotava paikalle kaikki, mitä tarvitset laitteesi käyttämiseen: <br>
+    Sinun on itse tuotava paikalle kaikki, mitä tarvitset laitteesi käyttämiseen: <br>
 
-Tietokone, monitori, näppäimistö, hiiri, hiirimatto TAI pelikonsoli, monitori, ohjaimet. <br>
+    Tietokone, monitori, näppäimistö, hiiri, hiirimatto TAI pelikonsoli, monitori, ohjaimet. <br>
 
-Kaikkien laitteiden virtakaapelit ja sähköjatkojohto (0,5m tai pidempi) , jossa on riittävästi pistokkeita koneelle, näytö(i)lle ja kännykän lataamiseen (konepaikoille on varattu vain yksi pistoke per paikka). <br>
+    Kaikkien laitteiden virtakaapelit ja sähköjatkojohto (0,5m tai pidempi) , jossa on riittävästi pistokkeita koneelle,
+    näytö(i)lle ja kännykän lataamiseen (konepaikoille on varattu vain yksi pistoke per paikka). <br>
 
-Vähintään 5 metriä pitkä verkkokaapeli, jossa RJ45-liittimet. <br>
+    Vähintään 5 metriä pitkä verkkokaapeli, jossa RJ45-liittimet. <br>
 
-Irtonaisten, langattomien laitteiden latausjohdot ja laturit. <br>
+    Irtonaisten, langattomien laitteiden latausjohdot ja laturit. <br>
 
-Kuulokkeet (suositeltu) tai kaiuttimet. <br>
+    Kuulokkeet (suositeltu) tai kaiuttimet. <br>
 
-Verkon käyttöä varten tietokoneessasi tulee olla Ethernet-liitäntä ja mukanasi 5 metriä pitkä Ethernet-kaapeli. Konsolit voidaan liittää tapahtuman langattomaan verkkoon, mutta jos haluat konsolisi lankaan, tuo myös se vähintään 5 metrinen verkkokaapeli. <br>
+    Verkon käyttöä varten tietokoneessasi tulee olla Ethernet-liitäntä ja mukanasi 5 metriä pitkä Ethernet-kaapeli.
+    Konsolit voidaan liittää tapahtuman langattomaan verkkoon, mutta jos haluat konsolisi lankaan, tuo myös se vähintään
+    5 metrinen verkkokaapeli. <br>
 
-<h2>OHJELMISTOT JA TIETOTURVA</h2>
-<p style ="color: #8dc63f">
+  <h2>OHJELMISTOT JA TIETOTURVA</h2>
+  <p style="color: #8dc63f">
 
-Varmistu, että tietokoneesi on suojassa viruksilta ja hakkerointiyrityksiltä. Tietoturva on yhteistyötä vaativaa ja koskee jokaista tapahtumaverkon käyttäjää. Tee seuraavat toimenpiteet ennen kuin lähdet tapahtumaan. <br>
+    Varmistu, että tietokoneesi on suojassa viruksilta ja hakkerointiyrityksiltä. Tietoturva on yhteistyötä vaativaa ja
+    koskee jokaista tapahtumaverkon käyttäjää. Tee seuraavat toimenpiteet ennen kuin lähdet tapahtumaan. <br>
 
-Käytä ajan tasalla olevia virustorjunta- ja palomuuriohjelmia. <br>
+    Käytä ajan tasalla olevia virustorjunta- ja palomuuriohjelmia. <br>
 
-Ota pois päältä henkilökohtaisten tai luottamuksellisten tiedostojen ja hakemistojen jakaminen. <br>
+    Ota pois päältä henkilökohtaisten tai luottamuksellisten tiedostojen ja hakemistojen jakaminen. <br>
 
-Päivitä käyttöjärjestelmääsi viimeisimmät tietoturvapäivitykset. <br>
+    Päivitä käyttöjärjestelmääsi viimeisimmät tietoturvapäivitykset. <br>
 
-Älä aja koneessasi epäilyttäviä ohjelmia tai epäilyttävistä lähteistä saatuja ohjelmia. <br>
+    Älä aja koneessasi epäilyttäviä ohjelmia tai epäilyttävistä lähteistä saatuja ohjelmia. <br>
 
-Älä avaa epäilyttäviä linkkejä, joiden lähdettä et tunne. <br>
+    Älä avaa epäilyttäviä linkkejä, joiden lähdettä et tunne. <br>
 
-Päivitä käyttöjärjestelmä ja yleiset ohjelmat. <br>
+    Päivitä käyttöjärjestelmä ja yleiset ohjelmat. <br>
 
-Tarkista aina oman laitteesi käyttöjärjestelmän ajantasaisuus. <br>
+    Tarkista aina oman laitteesi käyttöjärjestelmän ajantasaisuus. <br>
 
-Asenna kaikki tarvittavat ohjelmistopäivitykset ennen tapahtumaan saapumista. <br>
+    Asenna kaikki tarvittavat ohjelmistopäivitykset ennen tapahtumaan saapumista. <br>
 
-Varmista, että käytössäsi on uusin versio käyttämästäsi verkkoselaimesta. <br>
+    Varmista, että käytössäsi on uusin versio käyttämästäsi verkkoselaimesta. <br>
 
-Linux-käyttäjien tulee päivittää järjestelmänsä jakeluversion toimittajan ohjeiden mukaisesti. <br>
+    Linux-käyttäjien tulee päivittää järjestelmänsä jakeluversion toimittajan ohjeiden mukaisesti. <br>
 
-<h2>Virustorjunta</h2>
-<p style ="color: #8dc63f">
+  <h2>Virustorjunta</h2>
+  <p style="color: #8dc63f">
 
-Varmista että sinulla on asennettuna viimeisimmillä virustietokannoilla varustettu virustorjuntaohjelma. Yleensä virustorjuntaohjelmat päivittävät itsensä ja tietokantansa automaattisesti. Asia kannattaa kuitenkin tarkistaa ja kytkeä ominaisuus päälle, mikäli tällainen valinta on. <br>
+    Varmista että sinulla on asennettuna viimeisimmillä virustietokannoilla varustettu virustorjuntaohjelma. Yleensä
+    virustorjuntaohjelmat päivittävät itsensä ja tietokantansa automaattisesti. Asia kannattaa kuitenkin tarkistaa ja
+    kytkeä ominaisuus päälle, mikäli tällainen valinta on. <br>
 
-<h2>PALOMUURI</h2>
-<p style ="color: #8dc63f">
+  <h2>PALOMUURI</h2>
+  <p style="color: #8dc63f">
 
-Suosittelemme, että pidät tietokoneesi palomuuriohjelmiston päällä aina. Älä lähde kotoa palomuuri pois päältä. Jos sinun tarvitsee säätää palomuuria tapahtumassa, pyydä apua toisilta osallistujilta tai järjestäjiltä. Mitään takuuta tai vastuuta avustamisesta ei anneta eikä oteta. <br> 
+    Suosittelemme, että pidät tietokoneesi palomuuriohjelmiston päällä aina. Älä lähde kotoa palomuuri pois päältä. Jos
+    sinun tarvitsee säätää palomuuria tapahtumassa, pyydä apua toisilta osallistujilta tai järjestäjiltä. Mitään takuuta
+    tai vastuuta avustamisesta ei anneta eikä oteta. <br>
 
-<h2>TAPAHTUMAN PÄÄTTYMINEN</h2>
-<p style ="color: #8dc63f">
+  <h2>TAPAHTUMAN PÄÄTTYMINEN</h2>
+  <p style="color: #8dc63f">
 
-Tavaroiden poisvienti on yleensä paljon helpompaa ja nopeampaa, kuin kasaaminen. Tavaroita voi viedä ulos pääovesta tai Anni Swaninkadun pikkuovesta sunnuntaina. Konepaikan on oltava tyhjä sunnuntaina klo 12.00. <br>
+    Tavaroiden poisvienti on yleensä paljon helpompaa ja nopeampaa, kuin kasaaminen. Tavaroita voi viedä ulos pääovesta
+    tai Anni Swaninkadun pikkuovesta sunnuntaina. Konepaikan on oltava tyhjä sunnuntaina klo 12.00. <br>
 
-<h2>OHJEET</h2>
-<p style ="color: #8dc63f">
+  <h2>OHJEET</h2>
+  <p style="color: #8dc63f">
 
-Pakkaa tavarasi konepaikallasi. <br>
+    Pakkaa tavarasi konepaikallasi. <br>
 
-Siivoa jälkesi ja vie roskat roskiin <br>
+    Siivoa jälkesi ja vie roskat roskiin <br>
 
-Tarkista vielä kerran, että olet varmasti ottanut kaiken omaisuutesi mukaan konepaikaltasi. <br>
+    Tarkista vielä kerran, että olet varmasti ottanut kaiken omaisuutesi mukaan konepaikaltasi. <br>
 
-Tarkista, että nukkumatilaan ei ole jäänyt tavaroitasi <br>
+    Tarkista, että nukkumatilaan ei ole jäänyt tavaroitasi <br>
 
-Tarkista, että kaikki tavarasi ovat mukana. <br>
+    Tarkista, että kaikki tavarasi ovat mukana. <br>
 
-Lastaa tavarat kyytiisi. <br>
+    Lastaa tavarat kyytiisi. <br>
 
-Mene kotiin. <br>
-</p>
+    Mene kotiin. <br>
+  </p>
 
-<h3>ÄLÄ UNOHDA TAVAROITASI!</h3>
+  <h3>ÄLÄ UNOHDA TAVAROITASI!</h3>
 
-<br>
+  <br>
 
-<h1>TAPAHTUMAN SÄÄNNÖT</h1>
-<p style ="color: #8dc63f">
+  <h1>TAPAHTUMAN SÄÄNNÖT</h1>
+  <p style="color: #8dc63f">
 
-Mikäli osallistut tapahtumaan, hyväksyt alla olevat säännöt automaattisesti ja sitoudut noudattamaan niitä. <br>
+    Mikäli osallistut tapahtumaan, hyväksyt alla olevat säännöt automaattisesti ja sitoudut noudattamaan niitä. <br>
 
-Sääntöjen rikkominen voi johtaa tapahtumapaikalta poistamiseen.  <br>
+    Sääntöjen rikkominen voi johtaa tapahtumapaikalta poistamiseen. <br>
 
-Säännöt ovat paikallaan sen takia, että kaikkien viikonloppu olisi mukavampi, joten pyri seuraamaan niitä. <br>
+    Säännöt ovat paikallaan sen takia, että kaikkien viikonloppu olisi mukavampi, joten pyri seuraamaan niitä. <br>
 
-Muista, että kaikki Suomen lait kuten tekijänoikeuslait pätevät tapahtumassa.  <br>
+    Muista, että kaikki Suomen lait kuten tekijänoikeuslait pätevät tapahtumassa. <br>
 
-Käytä tervettä järkeäsi ja seuraa alla olevia sääntöjä. <br>
+    Käytä tervettä järkeäsi ja seuraa alla olevia sääntöjä. <br>
 
 
 
-<h2>KIELLETYT TAVARAT</h2>
-<p style ="color: #8dc63f">
+  <h2>KIELLETYT TAVARAT</h2>
+  <p style="color: #8dc63f">
 
-Minkäänlaiset aseet. <br>
+    Minkäänlaiset aseet. <br>
 
-Teräaseet, kuten puukko. <br>
+    Teräaseet, kuten puukko. <br>
 
-Leathermanit tai muut monitoimityökalut, joiden osana on veitsi (nämä luokitellaan teräaseiksi). <br>
+    Leathermanit tai muut monitoimityökalut, joiden osana on veitsi (nämä luokitellaan teräaseiksi). <br>
 
-Ilotulitusvälineet tai muut räjähdysherkät aineet. <br>
+    Ilotulitusvälineet tai muut räjähdysherkät aineet. <br>
 
-Alkoholi tai muut huumausaineet. <br>
+    Alkoholi tai muut huumausaineet. <br>
 
-Reseptilliset lääkkeet, joihin sinulla ei ole reseptiä (resepti pitää esittää pyydettäessä). <br>
+    Reseptilliset lääkkeet, joihin sinulla ei ole reseptiä (resepti pitää esittää pyydettäessä). <br>
 
-Laserosoittimet, laserkynät, yms. <br>
+    Laserosoittimet, laserkynät, yms. <br>
 
-Savukoneet. <br>
+    Savukoneet. <br>
 
-Kuivajää. <br>
+    Kuivajää. <br>
 
-Potkulaudat, tasapainolaudat, yms. <br>
+    Potkulaudat, tasapainolaudat, yms. <br>
 
-Isot kaiuttimet. <br>
+    Isot kaiuttimet. <br>
 
-<h2>PÄIHTEET JA HUUMAUSAINEET</h2>
-<p style ="color: #8dc63f">
+  <h2>PÄIHTEET JA HUUMAUSAINEET</h2>
+  <p style="color: #8dc63f">
+    Tapahtuma on täysin päihteetön. Päihteitä (alkoholi yms.) tai huumausaineita ei saa tuoda tapahtumapaikalle.
+    Tapahtumaan ei pääse sisään päihtyneenä. Tupakointi koulussa ja koulun alueella on kielletty. <br>
+    <br>
 
-Tapahtuma on täysin päihteetön. Päihteitä (alkoholi yms.) tai huumausaineita ei saa tuoda tapahtumapaikalle. Tapahtumaan ei pääse sisään päihtyneenä. Tupakointi koulussa ja koulun alueella on kielletty.  <br>
+  <h2>TEKIJÄNOIKEUDET</h2>
+  <p style="color: #8dc63f">
 
-<br>
+    Tekijänoikeuksilla suojattujen ohjelmistojen kopiointi on laitonta Suomessa. Laittomien ohjelmistojen myynti tai
+    piraatti FTP-palvelimien ylläpito johtaa välittömästi poistamiseen tapahtumasta. Törkeimmissä tapauksissa hoidamme
+    tapaukset viranomaisten tietoon. <br>
 
-<h2>TEKIJÄNOIKEUDET</h2>
-<p style ="color: #8dc63f">
+  <h2>MUSIIKIN ÄÄNENVOIMAKKUUS</h2>
+  <p style="color: #8dc63f">
 
-Tekijänoikeuksilla suojattujen ohjelmistojen kopiointi on laitonta Suomessa. Laittomien ohjelmistojen myynti tai piraatti FTP-palvelimien ylläpito johtaa välittömästi poistamiseen tapahtumasta. Törkeimmissä tapauksissa hoidamme tapaukset viranomaisten tietoon. <br>
+    Hyvin tehokkaat äänentoistolaitteet ovat kiellettyjä. Pidetään äänen taso järkevänä. <br>
 
-<h2>MUSIIKIN ÄÄNENVOIMAKKUUS</h2>
-<p style ="color: #8dc63f">
+    Jos kuitenkin terrorisoit laitteistollasi naapuristoasi, turvahenkilökunta voi käskeä sinua hiljentämään laitteitasi
+    tai äärimmäisessä tapauksessa poistaa sinut tapahtumapaikalta. <br>
 
-Hyvin tehokkaat äänentoistolaitteet ovat kiellettyjä. Pidetään äänen taso järkevänä. <br>
+    Toivomme, että käytätte tervettä järkeä. Sallitun ja kielletyn laitteiston rajan pitäisi olla kaikille melko selvä.
+    Kerromme sinulle kuitenkin, jos väärinkäsityksiä on päässyt käymään. <br>
 
-Jos kuitenkin terrorisoit laitteistollasi naapuristoasi, turvahenkilökunta voi käskeä sinua hiljentämään laitteitasi tai äärimmäisessä tapauksessa poistaa sinut tapahtumapaikalta. <br>
+  <h2>TAPAHTUMAPAIKAN VAURIOT</h2>
+  <p style="color: #8dc63f">
 
-Toivomme, että käytätte tervettä järkeä. Sallitun ja kielletyn laitteiston rajan pitäisi olla kaikille melko selvä. Kerromme sinulle kuitenkin, jos väärinkäsityksiä on päässyt käymään. <br>
+    Kaikki tapahtumapaikkaa vaurioittavat henkilöt ovat korvausvelvollisia vahingoistaan. <br>
 
-<h2>TAPAHTUMAPAIKAN VAURIOT</h2>
-<p style ="color: #8dc63f">
 
-Kaikki tapahtumapaikkaa vaurioittavat henkilöt ovat korvausvelvollisia vahingoistaan. <br>
+  <h3>PIDÄ KONEPAIKKASI SIISTINÄ!!!</h3>
 
 
-<h3>PIDÄ KONEPAIKKASI SIISTINÄ!!!</h3>
+  <h2>LÄHIVERKON SÄÄNNÖT</h2>
+  <p style="color: #8dc63f">
 
+    On kiellettyä: <br>
 
-<h2>LÄHIVERKON SÄÄNNÖT</h2>
-<p style ="color: #8dc63f">
+    Tarkkailla millään tavoin muuta verkkoliikennettä kuin sitä, jonka toinen päätepiste on oma tietokoneesi. <br>
 
-On kiellettyä: <br>
+    Yrittää murtautua muihin tietokoneisiin, jotka on kytketty verkkoon. <br>
 
-Tarkkailla millään tavoin muuta verkkoliikennettä kuin sitä, jonka toinen päätepiste on oma tietokoneesi. <br>
+    Hakea verkosta tai levittää tekijänoikeuksien suojattua materiaalia. <br>
 
-Yrittää murtautua muihin tietokoneisiin, jotka on kytketty verkkoon. <br>
+    Hakea verkosta tai levittää Suomen lain kieltämää materiaalia. <br>
 
-Hakea verkosta tai levittää tekijänoikeuksien suojattua materiaalia. <br>
+  <h2>PORNOGRAFINEN TAI VÄKIVALTAINEN MATERIAALI</h2>
+  <p style="color: #8dc63f">
 
-Hakea verkosta tai levittää Suomen lain kieltämää materiaalia. <br>
-
-<h2>PORNOGRAFINEN TAI VÄKIVALTAINEN MATERIAALI</h2>
-<p style ="color: #8dc63f">
-
-Tapahtumassa on kiellettyä katsoa julkisesti pornografista tai erittäin väkivaltaista aineistoa videoina tai kuvina. Eli suomeksi: aikuisviihde ja väkivalta jätetään pois kokonaan. Kyseistä materiaalia julkisesti näyttävä henkilö voidaan poistaa tapahtumasta ilman varoitusta (!). Oman koneen monitori näkyy myös muille, eli tapahtumassa se on julkista. <br>
+    Tapahtumassa on kiellettyä katsoa julkisesti pornografista tai erittäin väkivaltaista aineistoa videoina tai kuvina.
+    Eli suomeksi: aikuisviihde ja väkivalta jätetään pois kokonaan. Kyseistä materiaalia julkisesti näyttävä henkilö
+    voidaan poistaa tapahtumasta ilman varoitusta (!). Oman koneen monitori näkyy myös muille, eli tapahtumassa se on
+    julkista. <br>
 
 </body>
+
 </html>
