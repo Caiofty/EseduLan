@@ -24,6 +24,16 @@ padding-left: 50px;
 padding-right: 50px;
 }
 
+h2.ohjeetotsikko2-2 {
+  color: #8dc63f;
+  font-size: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0px;
+  text-shadow: 2px 2px 2px #ffffff;
+  margin-top: 0px;
+  }
+
 h3.ohjeetotsikko3 {
 color: #8dc63f;
 size: 40px;
