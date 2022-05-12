@@ -1,48 +1,40 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url(/kuvat/gamer-background.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; 
-  }
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(/kuvat/gamer-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 
-
-
-
-
-
-h1 {
-color: white;
-size: 40px;
+h1.ohjeetotsikko {
+color: #8dc63f;
+size: 50px;
 padding-left: 50px;
 padding-top: 50px;
 padding-right: 50px;
 }
 
-h2 {
-color: white;
-size: 20px;
+h2.ohjeetotsikko2 {
+color: #8dc63f;
 padding-left: 50px;
 padding-right: 50px;
 }
 
-h3 {
-color: white;
+h3.ohjeetotsikko3 {
+color: #8dc63f;
 size: 40px;
 padding-left: 50px;
-padding-right: 50px;
+padding-right: 0px;
 }
 
-p {
+.p-ohjeet {
 padding-left: 50px;
 padding-right: 50px;
-
-
-
+color: #ffffff;
+font-size: 20px;
 }
-
 
 @media only screen and (max-width: 650px) {
   
