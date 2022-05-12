@@ -1,14 +1,15 @@
 .radiolomake label {
-color: #8dc63f;
+color: white;
 
 }
 
 
 
 
-h2{
+h1{
     padding-top: 50px;
     padding-left: 50px;
+    font-size: 40px;
 }
 
 
@@ -33,4 +34,30 @@ body{
 
 .i1{
   width: 500px;
+  margin-bottom: 20px;
 }
+
+
+label{
+  font-size: 20px;
+}
+
+
+
+
+
+
+.submit{
+
+  
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+
+
