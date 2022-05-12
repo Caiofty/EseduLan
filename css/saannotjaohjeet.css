@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(/kuvat/gamer-background.jpg);
+  background-color: #535151;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
