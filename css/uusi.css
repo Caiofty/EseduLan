@@ -17,13 +17,13 @@ footer {
     padding-bottom: 1px;
     text-align: center;
     background-color: white;
-    
+
     width: 100%;
 }
 
 
-footer.infolomake{
-    
+footer.infolomake {
+
     padding-top: 10px;
     padding-bottom: 1px;
     text-align: center;
@@ -34,7 +34,7 @@ footer.infolomake{
 }
 
 
-.etusivu{
+.etusivu {
 
     text-align: center;
 }
@@ -468,6 +468,15 @@ body {
     color: white
 }
 
+.lomakeotsikko {
+    color: #8dc63f;
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    text-shadow: 2px 2px 2px #fff
+}
+
 h1 {
     padding-top: 50px;
     padding-left: 50px;
@@ -728,7 +737,7 @@ h1.ohjeetotsikko {
 h2.ohjeetotsikko2 {
     color: #8dc63f;
     padding-left: 50px;
-    padding-right: 50px
+    padding-right: 50px;
 }
 
 .ohjeetotsikko2-2 {
@@ -736,7 +745,7 @@ h2.ohjeetotsikko2 {
     color: #8dc63f;
     padding-left: 50px;
     padding-right: 50px;
-    text-shadow: 2px 2px 2px #fff;  
+    text-shadow: 2px 2px 2px #fff;
     margin: 0px;
 }
 
@@ -747,12 +756,13 @@ h3.ohjeetotsikko3 {
     padding-right: 0
 }
 
-.p-ohjeet {
+.p-ohjeet, .p-infotext {
     padding-left: 50px;
     padding-right: 50px;
     color: #fff;
     font-size: 20px;
-    text-align: left
+    text-align: left;
+    line-height: 26px;
 }
 
 .ul-li-a {
@@ -773,16 +783,44 @@ h3.ohjeetotsikko3 {
     text-align: left
 }
 
+li {
+    line-height: 26px;
+}
+
 .main-ohjeet {
-max-width: 80%
+    max-width: 55%
 }
 
 @media only screen and (max-width:650px) {
     p {
-        padding-left: 25px;
-        padding-right: 25px
-    }
+            padding-left: 25px;
+            padding-right: 25px
+        }
+    
+        .main-ohjeet {
+            max-width: 100%
+        }
+       
+        .ohjeetotsikko2-2 {
+            font-size: 45px;
+            color: #8dc63f;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-shadow: 2px 2px 2px #fff;
+            margin: 0px;
+        }
+
+        .lomakeotsikko {
+            color: #8dc63f;
+            font-size: 30px;
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-right: 50px;
+            text-shadow: 2px 2px 2px #fff
+        }  
 }
+
+
 
 *,
 *::before,
