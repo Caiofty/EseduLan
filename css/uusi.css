@@ -12,11 +12,27 @@ body {
     background-size: 100%
 }
 
-footer{
-    padding-top: 200px;
-    padding-bottom: 10px;
+footer {
+    padding-top: 10px;
+    padding-bottom: 1px;
     text-align: center;
-    color: white;}
+    background-color: white;
+    
+    width: 100%;
+}
+
+
+footer.infolomake{
+    
+    padding-top: 10px;
+    padding-bottom: 1px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 
 .etusivu{
 

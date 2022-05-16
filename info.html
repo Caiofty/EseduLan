@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,69 +8,74 @@
     <title>EseduLan</title>
     <link rel="stylesheet" href="./css/uusi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
-   
-        
-        <div class="container">
-            <div class="logo">
-                <a href="/index.html"><img src="/kuvat/esedu_logo2.svg" height="70px" alt="logo"></a>
-            </div>
+
+
+
+    <div class="container info">
+        <div class="logo">
+            <a href="/index.html"><img src="/kuvat/esedu_logo2.svg" height="70px" alt="logo"></a>
+        </div>
         <div class="navbar">
-        
-        <div class="icon-bar" onclick="Show()">
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
-        
-        <ul id="nav-lists">
-            <li class="close"><span onclick="Hide()">×</span></li>
-            <li><a href="/info.html">INFO</a></li>
-            <li><a href="/saannotjaohjeet.html">SÄÄNNÖT JA OHJEET</a></li>
-            <li><a href="/lomake.html">ILMOITTAUTUMISLOMAKE</a></li>
-        </ul>
-        
-        </div>
-        </div>
-        <div class="body">
-        </div>
 
-        <div class="etusivu">
-            
-             </div>
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
 
-        
-        <script>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a href="/info.html">INFO</a></li>
+                <li><a href="/saannotjaohjeet.html">SÄÄNNÖT JA OHJEET</a></li>
+                <li><a href="/lomake.html">ILMOITTAUTUMISLOMAKE</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
         var navList = document.getElementById("nav-lists");
         function Show() {
-        navList.classList.add("_Menus-show");
+            navList.classList.add("_Menus-show");
         }
-        
-        function Hide(){
-        navList.classList.remove("_Menus-show");
-        }
-        </script>
 
-<h1 class="h1-info">Info</h1>
+        function Hide() {
+            navList.classList.remove("_Menus-show");
+        }
+    </script>
+
+    <h1 class="h1-info">Info</h1>
     <p class="p-infotext">
-    Paikka: Esedun ruokala Otavankatu 4, Mikkeli. <br>
-    Aika: 22.4. klo 18.00 – 24.4. klo 12.00. <br>
-    Osallistumismaksu: 10€. <br>
-    Ikäraja: 15v. <br>
-    Konepaikka: 120x75cm. <br>
-    50 konepaikkaa. <br>
-    Osallistua voi myös konsolilla. <br>
-    Päihteetön tapahtuma.</p>
+        Paikka: Esedun ruokala Otavankatu 4, Mikkeli. <br>
+        Aika: 22.4. klo 18.00 – 24.4. klo 12.00. <br>
+        Osallistumismaksu: 10€. <br>
+        Ikäraja: 15v. <br>
+        Konepaikka: 120x75cm. <br>
+        50 konepaikkaa. <br>
+        Osallistua voi myös konsolilla. <br>
+        Päihteetön tapahtuma.</p>
 
 
-    <a href="https://discord.gg/BMVzfdwfu5"  >    <button class="discord">Discord</button>     </a>
+    <a href="https://discord.gg/BMVzfdwfu5"> <button class="discord">Discord</button> </a>
 
-    <footer> <small>&copy; Copyright 2018, Example Corporation</small> </footer>
+    <footer class="infolomake">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons -lisenssi"
+                style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Tämä teos on
+        lisensoitu <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Nimeä 4.0
+            Kansainvälinen -lisenssillä</a>.
+        <p>DigiMuuntamo, Jenna, Olli, Joacim</p>
+    </footer>
 
 </body>
+
 </html>
